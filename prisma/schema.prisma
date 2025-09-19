@@ -1,15 +1,43 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id                Int       @id @default(autoincrement())
+  telegramId        String    @unique
+  firstName         String?
+  lastName          String?
+  username          String?
+  language          String    @default("en") // en, ru, es
+  notificationTime  String    @default("09:00") // Формат HH:mm
+  notificationsEnabled Boolean @default(true)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  
+  // Связь с именинниками
+  birthdays         Birthday[]
+  
+  @@map("users")
+}
+
+model Birthday {
+  id          Int      @id @default(autoincrement())
+  name        String   // Имя именинника
+  birthDate   DateTime // Дата рождения
+  category    String   // Категория (семья, друзья, коллеги, etc.)
+  notes       String?  // Дополнительные заметки
+  isActive    Boolean  @default(true) // Включены ли уведомления
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Связь с пользователем
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@map("birthdays")
 }

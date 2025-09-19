@@ -1,0 +1,54 @@
+{
+  "welcome": {
+    "title": "🎉 ¡Bienvenido a Birthday Reminder Pro!",
+    "description": "Te ayudo a nunca olvidar cumpleaños importantes. ¡Añade tus contactos y te recordaré con felicitaciones generadas por IA!",
+    "chooseLanguage": "Elige tu idioma:"
+  },
+  "menu": {
+    "myBirthdays": "👥 Mis Cumpleaños",
+    "addBirthday": "➕ Añadir Cumpleaños",
+    "upcoming30Days": "📅 Próximos 30 Días",
+    "settings": "⚙️ Configuración"
+  },
+  "settings": {
+    "exportData": "📤 Exportar Datos",
+    "importCSV": "📥 Importar CSV",
+    "deleteProfile": "🗑️ Eliminar Perfil",
+    "language": "🌐 Idioma",
+    "notificationTime": "⏰ Hora de Notificación",
+    "notifications": "🔔 Notificaciones"
+  },
+  "birthday": {
+    "addTitle": "➕ Añadir Nuevo Cumpleaños",
+    "enterName": "Ingresa el nombre de la persona:",
+    "enterDate": "Ingresa fecha de nacimiento (DD.MM.YYYY):",
+    "selectCategory": "Selecciona categoría:",
+    "enterNotes": "Ingresa notas adicionales (opcional):",
+    "categories": {
+      "family": "👨‍👩‍👧‍👦 Familia",
+      "friends": "👫 Amigos",
+      "colleagues": "💼 Colegas",
+      "other": "📝 Otro"
+    }
+  },
+  "validation": {
+    "invalidDateFormat": "❌ Usa el formato DD.MM.YYYY (ej: 15.03.1990)",
+    "invalidDate": "❌ Fecha inválida",
+    "leapYearError": "❌ El 29 de febrero solo es válido en años bisiestos"
+  },
+  "notifications": {
+    "todayBirthday": "🎂 Cumpleaños de hoy:",
+    "upcomingBirthdays": "📅 Próximos cumpleaños:",
+    "noBirthdays": "No hay próximos cumpleaños",
+    "daysLeft": "días restantes"
+  },
+  "common": {
+    "save": "💾 Guardar",
+    "cancel": "❌ Cancelar",
+    "edit": "✏️ Editar",
+    "delete": "🗑️ Eliminar",
+    "back": "⬅️ Atrás",
+    "yes": "✅ Sí",
+    "no": "❌ No"
+  }
+}

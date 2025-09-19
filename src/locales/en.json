@@ -1,0 +1,54 @@
+{
+  "welcome": {
+    "title": "🎉 Welcome to Birthday Reminder Pro!",
+    "description": "I'll help you never forget important birthdays. Add your contacts and I'll remind you with AI-generated congratulations!",
+    "chooseLanguage": "Choose your language:"
+  },
+  "menu": {
+    "myBirthdays": "👥 My Birthdays",
+    "addBirthday": "➕ Add Birthday",
+    "upcoming30Days": "📅 Next 30 Days",
+    "settings": "⚙️ Settings"
+  },
+  "settings": {
+    "exportData": "📤 Export Data",
+    "importCSV": "📥 Import CSV",
+    "deleteProfile": "🗑️ Delete Profile",
+    "language": "🌐 Language",
+    "notificationTime": "⏰ Notification Time",
+    "notifications": "🔔 Notifications"
+  },
+  "birthday": {
+    "addTitle": "➕ Add New Birthday",
+    "enterName": "Enter the person's name:",
+    "enterDate": "Enter birth date (DD.MM.YYYY):",
+    "selectCategory": "Select category:",
+    "enterNotes": "Enter additional notes (optional):",
+    "categories": {
+      "family": "👨‍👩‍👧‍👦 Family",
+      "friends": "👫 Friends",
+      "colleagues": "💼 Colleagues",
+      "other": "📝 Other"
+    }
+  },
+  "validation": {
+    "invalidDateFormat": "❌ Please use DD.MM.YYYY format (e.g., 15.03.1990)",
+    "invalidDate": "❌ Invalid date",
+    "leapYearError": "❌ February 29th is only valid in leap years"
+  },
+  "notifications": {
+    "todayBirthday": "🎂 Today's birthday:",
+    "upcomingBirthdays": "📅 Upcoming birthdays:",
+    "noBirthdays": "No upcoming birthdays",
+    "daysLeft": "days left"
+  },
+  "common": {
+    "save": "💾 Save",
+    "cancel": "❌ Cancel",
+    "edit": "✏️ Edit",
+    "delete": "🗑️ Delete",
+    "back": "⬅️ Back",
+    "yes": "✅ Yes",
+    "no": "❌ No"
+  }
+}
